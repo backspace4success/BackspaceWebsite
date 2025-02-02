@@ -12,7 +12,7 @@ export const courses = [
       "Computer History",
       "Computer Hardware and",
       "Logic Gates",
-      "Numbering Systems( Binary and Decimal Numbers )"
+      "Numbering Systems (Binary and Decimal Numbers)", // Added missing comma
       "Numbering Systems (Octal and Hexadecimal Numbers)",
       "Numbering Systems (Complements of Numbers) and (Subtraction Using Complements)",
       "Introduction To Programming"
