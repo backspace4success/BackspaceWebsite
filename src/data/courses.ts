@@ -8,23 +8,33 @@ export const courses = [
     students: 1023,
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
     topics: [
-      "Computer Architecture",
-      "Binary & Data Representation",
-      "Algorithms & Logic",
-      "Programming Fundamentals"
+      "What is Computer Science?",
+      "Computer History",
+      "Computer Hardware and",
+      "Logic Gates",
+      "Numbering Systems( Binary and Decimal Numbers )"
+      "Numbering Systems (Octal and Hexadecimal Numbers)",
+      "Numbering Systems (Complements of Numbers) and (Subtraction Using Complements)",
+      "Introduction To Programming"
     ],
     outcomes: [
-      "Understand how computers process information",
-      "Learn basic programming concepts",
-      "Develop problem-solving skills",
-      "Write simple programs"
+      "Understand how computers process information and represent data.",
+      "Learn the basics of computer hardware and its key components.",
+      "Explore the evolution of computers from early machines to modern technology.",
+      "Master logic gates and numbering systems essential for digital computing.",
+      "Gain a strong foundation in programming and problem-solving skills."
     ],
     prerequisites: "No prior programming experience required",
-    projects: [
-      "Build a simple calculator",
-      "Create a basic encryption program",
-      "Develop a number guessing game"
-    ]
+    projects: [  
+      "Create a Computer Science Concept Map",  
+      "Design a Computer History Timeline",  
+      "Label and Identify Computer Hardware Components",  
+      "Build Truth Tables for Logic Gates",  
+      "Practice Binary to Decimal Conversions with Flashcards",  
+      "Develop a Paper-Based Number System Converter",  
+      "Solve Subtraction Problems Using Complements",  
+      "Create a Poster Explaining Basic Programming Concepts"  
+    ]  
   },
   {
     title: "Python Programming",
