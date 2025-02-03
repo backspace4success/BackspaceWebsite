@@ -8,6 +8,7 @@ export const pricingPlans: PricingPlan[] = [
     buttonText: 'Subscribe Now',
     popular: true,
     features: [
+      { name: '4 Days / Week', included: true },
       { name: 'Books', included: true },
       { name: 'Follow-Up', included: true },
       { name: 'Instructor', included: true },
@@ -17,7 +18,7 @@ export const pricingPlans: PricingPlan[] = [
     discount: [
       { months: 3, percentage: 5, price: 2850 },
       { months: 6, percentage: 12, price: 5280 },
-      { months: 'cash', price: 4995 } // Changed to 'cash' for full course
+      { months: 'cash', percentage: 26, price: 4995 } // Changed to 'cash' for full course
     ]
   },
   {
@@ -28,6 +29,7 @@ export const pricingPlans: PricingPlan[] = [
     interval: 'month',
     buttonText: 'Subscribe Now',
     features: [
+      { name: '2 Days / Week', included: true },
       { name: 'Books', included: true },
       { name: 'Follow-Up', included: true },
       { name: 'Instructor', included: true },
@@ -37,7 +39,7 @@ export const pricingPlans: PricingPlan[] = [
     discount: [
       { months: 3, percentage: 5, price: 1781 },
       { months: 6, percentage: 12, price: 3300 },
-      { months: 'cash', price: 6243 } // Changed to 'cash' for full course
+      { months: 'cash', percentage: 26, price: 6243 } // Changed to 'cash' for full course
     ]
   },
   {
@@ -48,6 +50,7 @@ export const pricingPlans: PricingPlan[] = [
     interval: 'month',
     buttonText: 'Subscribe Now',
     features: [
+      { name: 'Study as you want', included: true },
       { name: 'Books', included: true },
       { name: 'Follow-Up', included: false },
       { name: 'Instructor', included: false },
@@ -57,7 +60,7 @@ export const pricingPlans: PricingPlan[] = [
     discount: [
       { months: 3, percentage: 5, price: 1068 },
       { months: 6, percentage: 12, price: 1980 },
-      { months: 'cash', price: 3746 } // Changed to 'cash' for full course
+      { months: 'cash', percentage: 26, price: 3746 } // Changed to 'cash' for full course
     ]
   }
 ];
