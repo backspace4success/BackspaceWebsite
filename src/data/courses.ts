@@ -144,209 +144,209 @@ export const courses = [
       "Library Management System",
       "Banking System"
     ]
-  },
-
-  {
-    title: "Introduction to Information Systems",
-    description: "Explore the fundamental concepts of information systems and their role in modern organizations. Learn about system architecture, databases, networking, and how technology supports business operations.",
-    level: "Beginner",
-    duration: "8 weeks",
-    rating: 4.8,
-    students: 1023,
-    image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/IS.png?raw=true",
-    topics: [
-      "System Architecture",
-      "Database Management",
-      "Network Infrastructure",
-      "Information Security",
-      "Business Intelligence",
-      "Cloud Computing"
-    ],
-    outcomes: [
-      "Understand IS components",
-      "Analyze business requirements",
-      "Design system solutions",
-      "Implement security measures"
-    ],
-    prerequisites: "Basic computer literacy",
-    projects: [
-      "Business System Analysis",
-      "Database Design Project",
-      "Security Assessment"
-    ]
-  },
-  {
-    title: "Networks",
-    description: "Comprehensive study of computer networks, protocols, and architecture. Learn how data travels across networks, understand security principles, and gain hands-on experience with network configuration.",
-    level: "Intermediate",
-    duration: "10 weeks",
-    rating: 4.8,
-    students: 845,
-    image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/Networks.png?raw=true",
-    topics: [
-      "Network Protocols",
-      "TCP/IP Stack",
-      "Routing & Switching",
-      "Network Security",
-      "Wireless Networks",
-      "Cloud Networking"
-    ],
-    outcomes: [
-      "Configure network devices",
-      "Implement security protocols",
-      "Troubleshoot network issues",
-      "Design network architecture"
-    ],
-    prerequisites: "Basic networking knowledge",
-    projects: [
-      "Network Monitoring Tool",
-      "Secure Chat Application",
-      "Network Design Project"
-    ]
-  },
-  {
-    title: "Operating Systems",
-    description: "Explore the internals of operating systems, including process management, memory allocation, file systems, and scheduling algorithms. Learn how modern operating systems manage computer resources efficiently.",
-    level: "Advanced",
-    duration: "12 weeks",
-    rating: 4.6,
-    students: 765,
-    image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/OS.png?raw=true",
-    topics: [
-      "Process Management",
-      "Memory Management",
-      "File Systems",
-      "I/O Systems",
-      "Virtualization",
-      "Distributed Systems"
-    ],
-    outcomes: [
-      "Understand OS architecture",
-      "Implement system calls",
-      "Manage system resources",
-      "Debug system issues"
-    ],
-    prerequisites: "Programming experience, Computer Architecture",
-    projects: [
-      "Simple Shell Implementation",
-      "Memory Manager",
-      "File System Simulator"
-    ]
-  },
-  {
-    title: "Algorithms",
-    description: "Master essential algorithms and problem-solving techniques. Learn to analyze algorithm efficiency, implement various algorithmic strategies, and solve complex computational problems efficiently.",
-    level: "Advanced",
-    duration: "12 weeks",
-    rating: 4.7,
-    students: 892,
-    image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/Algorithms.png?raw=true",
-    topics: [
-      "Sorting & Searching",
-      "Dynamic Programming",
-      "Graph Algorithms",
-      "Greedy Algorithms",
-      "Divide & Conquer",
-      "NP-Complete Problems"
-    ],
-    outcomes: [
-      "Design efficient algorithms",
-      "Analyze time complexity",
-      "Solve optimization problems",
-      "Implement advanced algorithms"
-    ],
-    prerequisites: "Data Structures, Programming proficiency",
-    projects: [
-      "Path Finding Visualizer",
-      "Optimization Solver",
-      "Algorithm Visualization Tool"
-    ]
-  },
-  {
-    title: "Software Engineering",
-    description: "Learn professional software development practices, from requirements gathering to deployment. Master agile methodologies, version control, testing strategies, and project management techniques.",
-    level: "Advanced",
-    duration: "14 weeks",
-    rating: 4.9,
-    students: 998,
-    image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/SE.png?raw=true",
-    topics: [
-      "Software Development Lifecycle",
-      "Agile & Scrum",
-      "Version Control (Git)",
-      "Testing & QA",
-      "CI/CD",
-      "Project Management"
-    ],
-    outcomes: [
-      "Lead development projects",
-      "Implement agile practices",
-      "Ensure code quality",
-      "Deploy applications"
-    ],
-    prerequisites: "Programming experience, Basic project management",
-    projects: [
-      "Team Project Management Tool",
-      "Automated Testing Suite",
-      "Full-Stack Application"
-    ]
-  },
-  {
-    title: "System Analysis and Design",
-    description: "Learn to analyze business requirements and design effective software solutions. Master various modeling techniques, requirement gathering methods, and system design principles.",
-    level: "Advanced",
-    duration: "14 weeks",
-    rating: 4.8,
-    students: 734,
-    image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/SAAS.png?raw=true",
-    topics: [
-      "Requirements Engineering",
-      "System Modeling",
-      "UML Diagrams",
-      "Architecture Design",
-      "User Interface Design",
-      "System Integration"
-    ],
-    outcomes: [
-      "Gather requirements effectively",
-      "Create system models",
-      "Design system architecture",
-      "Evaluate design alternatives"
-    ],
-    prerequisites: "Basic programming, Project management fundamentals",
-    projects: [
-      "Business System Design",
-      "Requirements Documentation",
-      "System Prototype"
-    ]
-  },
-  {
-    title: "Databases",
-    description: "Comprehensive coverage of database design, implementation, and management. Learn SQL, database normalization, transaction management, and how to build efficient database applications.",
-    level: "Intermediate",
-    duration: "12 weeks",
-    rating: 4.9,
-    students: 1156,
-    image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/DB.png?raw=true",
-    topics: [
-      "Database Design",
-      "SQL Programming",
-      "Normalization",
-      "Transaction Management",
-      "Database Security",
-      "NoSQL Databases"
-    ],
-    outcomes: [
-      "Design database schemas",
-      "Write complex SQL queries",
-      "Implement data security",
-      "Optimize database performance"
-    ],
-    prerequisites: "Basic programming knowledge",
-    projects: [
-      "E-commerce Database",
-      "Query Optimization Tool",
-      "Database Management System"
-    ]
   }
+
+  // {
+  //   title: "Introduction to Information Systems",
+  //   description: "Explore the fundamental concepts of information systems and their role in modern organizations. Learn about system architecture, databases, networking, and how technology supports business operations.",
+  //   level: "Beginner",
+  //   duration: "8 weeks",
+  //   rating: 4.8,
+  //   students: 1023,
+  //   image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/IS.png?raw=true",
+  //   topics: [
+  //     "System Architecture",
+  //     "Database Management",
+  //     "Network Infrastructure",
+  //     "Information Security",
+  //     "Business Intelligence",
+  //     "Cloud Computing"
+  //   ],
+  //   outcomes: [
+  //     "Understand IS components",
+  //     "Analyze business requirements",
+  //     "Design system solutions",
+  //     "Implement security measures"
+  //   ],
+  //   prerequisites: "Basic computer literacy",
+  //   projects: [
+  //     "Business System Analysis",
+  //     "Database Design Project",
+  //     "Security Assessment"
+  //   ]
+  // },
+  // {
+  //   title: "Networks",
+  //   description: "Comprehensive study of computer networks, protocols, and architecture. Learn how data travels across networks, understand security principles, and gain hands-on experience with network configuration.",
+  //   level: "Intermediate",
+  //   duration: "10 weeks",
+  //   rating: 4.8,
+  //   students: 845,
+  //   image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/Networks.png?raw=true",
+  //   topics: [
+  //     "Network Protocols",
+  //     "TCP/IP Stack",
+  //     "Routing & Switching",
+  //     "Network Security",
+  //     "Wireless Networks",
+  //     "Cloud Networking"
+  //   ],
+  //   outcomes: [
+  //     "Configure network devices",
+  //     "Implement security protocols",
+  //     "Troubleshoot network issues",
+  //     "Design network architecture"
+  //   ],
+  //   prerequisites: "Basic networking knowledge",
+  //   projects: [
+  //     "Network Monitoring Tool",
+  //     "Secure Chat Application",
+  //     "Network Design Project"
+  //   ]
+  // },
+  // {
+  //   title: "Operating Systems",
+  //   description: "Explore the internals of operating systems, including process management, memory allocation, file systems, and scheduling algorithms. Learn how modern operating systems manage computer resources efficiently.",
+  //   level: "Advanced",
+  //   duration: "12 weeks",
+  //   rating: 4.6,
+  //   students: 765,
+  //   image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/OS.png?raw=true",
+  //   topics: [
+  //     "Process Management",
+  //     "Memory Management",
+  //     "File Systems",
+  //     "I/O Systems",
+  //     "Virtualization",
+  //     "Distributed Systems"
+  //   ],
+  //   outcomes: [
+  //     "Understand OS architecture",
+  //     "Implement system calls",
+  //     "Manage system resources",
+  //     "Debug system issues"
+  //   ],
+  //   prerequisites: "Programming experience, Computer Architecture",
+  //   projects: [
+  //     "Simple Shell Implementation",
+  //     "Memory Manager",
+  //     "File System Simulator"
+  //   ]
+  // },
+  // {
+  //   title: "Algorithms",
+  //   description: "Master essential algorithms and problem-solving techniques. Learn to analyze algorithm efficiency, implement various algorithmic strategies, and solve complex computational problems efficiently.",
+  //   level: "Advanced",
+  //   duration: "12 weeks",
+  //   rating: 4.7,
+  //   students: 892,
+  //   image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/Algorithms.png?raw=true",
+  //   topics: [
+  //     "Sorting & Searching",
+  //     "Dynamic Programming",
+  //     "Graph Algorithms",
+  //     "Greedy Algorithms",
+  //     "Divide & Conquer",
+  //     "NP-Complete Problems"
+  //   ],
+  //   outcomes: [
+  //     "Design efficient algorithms",
+  //     "Analyze time complexity",
+  //     "Solve optimization problems",
+  //     "Implement advanced algorithms"
+  //   ],
+  //   prerequisites: "Data Structures, Programming proficiency",
+  //   projects: [
+  //     "Path Finding Visualizer",
+  //     "Optimization Solver",
+  //     "Algorithm Visualization Tool"
+  //   ]
+  // },
+  // {
+  //   title: "Software Engineering",
+  //   description: "Learn professional software development practices, from requirements gathering to deployment. Master agile methodologies, version control, testing strategies, and project management techniques.",
+  //   level: "Advanced",
+  //   duration: "14 weeks",
+  //   rating: 4.9,
+  //   students: 998,
+  //   image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/SE.png?raw=true",
+  //   topics: [
+  //     "Software Development Lifecycle",
+  //     "Agile & Scrum",
+  //     "Version Control (Git)",
+  //     "Testing & QA",
+  //     "CI/CD",
+  //     "Project Management"
+  //   ],
+  //   outcomes: [
+  //     "Lead development projects",
+  //     "Implement agile practices",
+  //     "Ensure code quality",
+  //     "Deploy applications"
+  //   ],
+  //   prerequisites: "Programming experience, Basic project management",
+  //   projects: [
+  //     "Team Project Management Tool",
+  //     "Automated Testing Suite",
+  //     "Full-Stack Application"
+  //   ]
+  // },
+  // {
+  //   title: "System Analysis and Design",
+  //   description: "Learn to analyze business requirements and design effective software solutions. Master various modeling techniques, requirement gathering methods, and system design principles.",
+  //   level: "Advanced",
+  //   duration: "14 weeks",
+  //   rating: 4.8,
+  //   students: 734,
+  //   image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/SAAS.png?raw=true",
+  //   topics: [
+  //     "Requirements Engineering",
+  //     "System Modeling",
+  //     "UML Diagrams",
+  //     "Architecture Design",
+  //     "User Interface Design",
+  //     "System Integration"
+  //   ],
+  //   outcomes: [
+  //     "Gather requirements effectively",
+  //     "Create system models",
+  //     "Design system architecture",
+  //     "Evaluate design alternatives"
+  //   ],
+  //   prerequisites: "Basic programming, Project management fundamentals",
+  //   projects: [
+  //     "Business System Design",
+  //     "Requirements Documentation",
+  //     "System Prototype"
+  //   ]
+  // },
+  // {
+  //   title: "Databases",
+  //   description: "Comprehensive coverage of database design, implementation, and management. Learn SQL, database normalization, transaction management, and how to build efficient database applications.",
+  //   level: "Intermediate",
+  //   duration: "12 weeks",
+  //   rating: 4.9,
+  //   students: 1156,
+  //   image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/DB.png?raw=true",
+  //   topics: [
+  //     "Database Design",
+  //     "SQL Programming",
+  //     "Normalization",
+  //     "Transaction Management",
+  //     "Database Security",
+  //     "NoSQL Databases"
+  //   ],
+  //   outcomes: [
+  //     "Design database schemas",
+  //     "Write complex SQL queries",
+  //     "Implement data security",
+  //     "Optimize database performance"
+  //   ],
+  //   prerequisites: "Basic programming knowledge",
+  //   projects: [
+  //     "E-commerce Database",
+  //     "Query Optimization Tool",
+  //     "Database Management System"
+  //   ]
+  // }
 ];
