@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Linkedin, Twitter, Github } from 'lucide-react';
 import { TeamMember } from '../data/team';
 
@@ -8,17 +8,29 @@ interface TeamSliderProps {
 
 function TeamSlider({ members }: TeamSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = 3;
+  const [itemsPerPage, setItemsPerPage] = useState(2);
+
+  useEffect(() => {
+    // Adjust items per page based on screen size
+    const updateItemsPerPage = () => {
+      setItemsPerPage(window.innerWidth < 768 ? 1 : 2);
+    };
+
+    updateItemsPerPage(); // Initial check
+    window.addEventListener('resize', updateItemsPerPage);
+    return () => window.removeEventListener('resize', updateItemsPerPage);
+  }, []);
+
   const totalPages = Math.ceil(members.length / itemsPerPage);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex + itemsPerPage >= members.length ? 0 : prevIndex + itemsPerPage
     );
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex - itemsPerPage < 0 ? members.length - itemsPerPage : prevIndex - itemsPerPage
     );
   };
@@ -36,7 +48,7 @@ function TeamSlider({ members }: TeamSliderProps) {
           <ChevronLeft className="h-8 w-8" />
         </button>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+        <div className={`grid grid-cols-1 md:grid-cols-${itemsPerPage} gap-8 w-full`}>
           {currentMembers.map((member) => (
             <div key={member.id} className="text-center p-6 transition-all duration-300">
               <div className="relative group">
