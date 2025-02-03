@@ -19,31 +19,43 @@ interface CourseSliderProps {
 function CourseSlider({ courses, onViewCourse }: CourseSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const itemsPerPage = 3;
+  const [itemsPerPage, setItemsPerPage] = useState(3);
+
+  useEffect(() => {
+    // Adjust items per page based on screen size
+    const updateItemsPerPage = () => {
+      setItemsPerPage(window.innerWidth < 768 ? 1 : 3);
+    };
+
+    updateItemsPerPage(); // Initial call
+    window.addEventListener('resize', updateItemsPerPage);
+    return () => window.removeEventListener('resize', updateItemsPerPage);
+  }, []);
+
   const totalPages = Math.ceil(courses.length / itemsPerPage);
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
     if (isAutoPlaying) {
       interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => 
+        setCurrentIndex((prevIndex) =>
           prevIndex + itemsPerPage >= courses.length ? 0 : prevIndex + itemsPerPage
         );
       }, 5000);
     }
     return () => clearInterval(interval);
-  }, [isAutoPlaying, courses.length]);
+  }, [isAutoPlaying, courses.length, itemsPerPage]);
 
   const nextSlide = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex + itemsPerPage >= courses.length ? 0 : prevIndex + itemsPerPage
     );
   };
 
   const prevSlide = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex - itemsPerPage < 0 ? courses.length - itemsPerPage : prevIndex - itemsPerPage
     );
   };
@@ -58,7 +70,7 @@ function CourseSlider({ courses, onViewCourse }: CourseSliderProps) {
   return (
     <div className="relative">
       <div className="overflow-hidden">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className={`grid grid-cols-1 md:grid-cols-${itemsPerPage} gap-8`}>
           {currentCourses.map((course, index) => (
             <div 
               key={index}
