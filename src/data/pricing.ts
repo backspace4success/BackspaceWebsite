@@ -1,73 +1,63 @@
-export interface PricingFeature {
-  name: string;
-  included: boolean;
-}
-
-export interface PricingPlan {
-  id: string;
-  name: string;
-  description: string;
-  price: number;
-  interval: 'month' | 'year';
-  features: PricingFeature[];
-  popular?: boolean;
-  buttonText: string;
-}
-
 export const pricingPlans: PricingPlan[] = [
   {
-    id: 'basic',
-    name: 'Basic',
-    description: 'Perfect for getting started with coding',
-    price: 29,
+    id: 'fast',
+    name: '🏎️ 1000 L.E / Month',
+    description: 'Includes full access to books, instructors, and team support',
+    price: 1000,
     interval: 'month',
-    buttonText: 'Start Basic',
-    features: [
-      { name: 'Access to basic courses', included: true },
-      { name: 'Community forum access', included: true },
-      { name: 'Course completion certificates', included: true },
-      { name: 'Email support', included: true },
-      { name: 'Project reviews', included: false },
-      { name: 'Mentor sessions', included: false },
-      { name: 'Career guidance', included: false },
-      { name: 'Job placement assistance', included: false }
-    ]
-  },
-  {
-    id: 'pro',
-    name: 'Professional',
-    description: 'Best for serious learners',
-    price: 79,
-    interval: 'month',
+    buttonText: 'Subscribe Now',
     popular: true,
-    buttonText: 'Start Pro',
     features: [
-      { name: 'Access to all courses', included: true },
-      { name: 'Community forum access', included: true },
-      { name: 'Course completion certificates', included: true },
-      { name: 'Priority email support', included: true },
-      { name: 'Project reviews', included: true },
-      { name: 'Monthly mentor sessions', included: true },
-      { name: 'Career guidance', included: false },
-      { name: 'Job placement assistance', included: false }
+      { name: 'Books', included: true },
+      { name: 'Follow-Up', included: true },
+      { name: 'Instructor', included: true },
+      { name: 'Team', included: true },
+      { name: 'Family Group', included: true }
+    ],
+    discount: [
+      { months: 3, percentage: 5, price: 2850 },
+      { months: 6, percentage: 12, price: 5280 },
+      { months: 'cash', price: 4995 } // Changed to 'cash' for full course
     ]
   },
   {
-    id: 'enterprise',
-    name: 'Enterprise',
-    description: 'Complete career transformation',
-    price: 149,
+    id: 'relaxed',
+    name: '🦥 625 L.E / Month',
+    description: 'A balanced plan with instructor and team access',
+    price: 625,
     interval: 'month',
-    buttonText: 'Contact Sales',
+    buttonText: 'Subscribe Now',
     features: [
-      { name: 'Access to all courses', included: true },
-      { name: 'Community forum access', included: true },
-      { name: 'Course completion certificates', included: true },
-      { name: 'Priority email support', included: true },
-      { name: 'Unlimited project reviews', included: true },
-      { name: 'Weekly mentor sessions', included: true },
-      { name: 'Career guidance', included: true },
-      { name: 'Job placement assistance', included: true }
+      { name: 'Books', included: true },
+      { name: 'Follow-Up', included: true },
+      { name: 'Instructor', included: true },
+      { name: 'Team', included: true },
+      { name: 'Family Group', included: true }
+    ],
+    discount: [
+      { months: 3, percentage: 5, price: 1781 },
+      { months: 6, percentage: 12, price: 3300 },
+      { months: 'cash', price: 6243 } // Changed to 'cash' for full course
+    ]
+  },
+  {
+    id: 'self',
+    name: '💁🏻 375 L.E / Month',
+    description: 'Books-only plan without additional support',
+    price: 375,
+    interval: 'month',
+    buttonText: 'Subscribe Now',
+    features: [
+      { name: 'Books', included: true },
+      { name: 'Follow-Up', included: false },
+      { name: 'Instructor', included: false },
+      { name: 'Team', included: false },
+      { name: 'Family Group', included: false }
+    ],
+    discount: [
+      { months: 3, percentage: 5, price: 1068 },
+      { months: 6, percentage: 12, price: 1980 },
+      { months: 'cash', price: 3746 } // Changed to 'cash' for full course
     ]
   }
 ];
