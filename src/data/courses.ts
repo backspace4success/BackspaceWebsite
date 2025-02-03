@@ -3,7 +3,7 @@ export const courses = [
     title: "Introduction to Computer Science",
     description: "A foundational course covering the core concepts of computer science, from binary and computer architecture to basic programming concepts and problem-solving strategies. Perfect for beginners wanting to understand how computers work and think like a programmer.",
     level: "Beginner",
-    duration: "8 weeks",
+    duration: "8 - 10  Sessions",
     rating: 4.8,
     students: 1023,
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
@@ -115,34 +115,37 @@ export const courses = [
     ]
   },
   {
-    title: "Object-Oriented Programming (OOP)",
-    description: "Deep dive into object-oriented programming principles and design patterns. Learn how to write maintainable, scalable, and reusable code using OOP concepts. Essential for modern software development.",
+    title: "Introduction to Object-Oriented Programming (OOP)",
+    description: "Learn the fundamentals of Object-Oriented Programming (OOP), including classes, objects, inheritance, and encapsulation. Understand how to structure programs using OOP principles to write modular, scalable, and reusable code.",
     level: "Intermediate",
-    duration: "10 weeks",
+    duration: "8-10 Sessions",
     rating: 4.8,
     students: 932,
     image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/OOP.png?raw=true",
     topics: [
-      "Classes & Objects",
-      "Inheritance & Polymorphism",
-      "Encapsulation & Abstraction",
-      "Design Patterns",
-      "SOLID Principles",
-      "Unit Testing"
+      "Introduction to OOP and Its Benefits",
+      "Classes and Objects",
+      "UML Diagrams and Design Principles",
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation"
     ],
     outcomes: [
-      "Design object-oriented systems",
-      "Implement design patterns",
-      "Write maintainable code",
-      "Create reusable components"
+      "Understand the core concepts of OOP",
+      "Design object-oriented systems using classes and objects",
+      "Write modular and reusable code using OOP principles",
+      "Apply inheritance, encapsulation, and polymorphism in projects",
+      "Understand real-world applications of OOP"
     ],
     prerequisites: "Basic programming knowledge",
     projects: [
+      "Student Management System",
       "Library Management System",
-      "E-commerce Platform",
-      "Game Engine Framework"
+      "Banking System"
     ]
   },
+
   {
     title: "Introduction to Information Systems",
     description: "Explore the fundamental concepts of information systems and their role in modern organizations. Learn about system architecture, databases, networking, and how technology supports business operations.",
