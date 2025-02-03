@@ -27,18 +27,20 @@ function Courses({ onViewCourse }: CoursesProps) {
       const courseCategories = new Set(course.topics.map(topic => {
         if (topic.includes('Python')) return 'Programming Languages';
         if (topic.includes('Web') || topic.includes('Frontend') || topic.includes('Backend')) return 'Web Development';
-        if (topic.includes('Data')) return 'Data Science';
+        if (topic.includes('Data')) return 'Data Structures'; // Fixed the typo here
         if (topic.includes('Algorithm') || topic.includes('Structure')) return 'Computer Science';
         if (topic.includes('Network')) return 'Networking';
         if (topic.includes('Security')) return 'Cybersecurity';
+        if (topic.includes('Information') || topic.includes('Systems')) return 'Information Systems';
         return 'Other';
       }));
+
       const matchesCategory = filters.category === 'All Categories' || courseCategories.has(filters.category);
 
       // Duration filtering
       const weeksDuration = parseInt(course.duration);
       const matchesDuration = filters.duration === 'Any' ||
-        (filters.duration === '0-4 weeks' && weeksDuration <= 4) ||
+        (filters.duration === '0-4 Sessions' && weeksDuration <= 4) ||
         (filters.duration === '5-8 weeks' && weeksDuration > 4 && weeksDuration <= 8) ||
         (filters.duration === '9+ weeks' && weeksDuration > 8);
 
@@ -81,15 +83,19 @@ function Courses({ onViewCourse }: CoursesProps) {
               onChange={(e) => setFilters(prev => ({ ...prev, category: e.target.value }))}
             >
               <option>All Categories</option>
-              <option>Programming Languages</option>
-              <option>Web Development</option>
-              <option>Data Science</option>
               <option>Computer Science</option>
+              <option>Programming Languages</option>
               <option>Networking</option>
-              <option>Cybersecurity</option>
+              <option>Information Systems</option>
+              <option>Database</option>
+              <option>Data Strucures</option> 
+              <option>Algorithms</option> 
+              <option>OOP</option>
+              <option>System Analysis and Design</option>
+              <option>Software Engineering</option>
             </select>
             
-            <select 
+            {/* <select 
               className="rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
               value={filters.duration}
               onChange={(e) => setFilters(prev => ({ ...prev, duration: e.target.value }))}
@@ -98,7 +104,7 @@ function Courses({ onViewCourse }: CoursesProps) {
               <option>0-4 weeks</option>
               <option>5-8 weeks</option>
               <option>9+ weeks</option>
-            </select>
+            </select> */}
 
             <button 
               onClick={() => setFilters({ level: 'All Levels', category: 'All Categories', duration: 'Any' })}
