@@ -16,7 +16,7 @@ export const pricingPlans: PricingPlan[] = [
       { name: 'Family Group', included: true }
     ],
     discount: [
-      { months: 3, percentage: 5, price: 2850 },
+      // { months: 3, percentage: 5, price: 2850 },
       { months: 6, percentage: 12, price: 5280 },
       { months: 'cash', percentage: 26, price: 4995 } // Changed to 'cash' for full course
     ]
@@ -37,7 +37,7 @@ export const pricingPlans: PricingPlan[] = [
       { name: 'Family Group', included: true }
     ],
     discount: [
-      { months: 3, percentage: 5, price: 1781 },
+      // { months: 3, percentage: 5, price: 1781 },
       { months: 6, percentage: 12, price: 3300 },
       { months: 'cash', percentage: 26, price: 6243 } // Changed to 'cash' for full course
     ]
@@ -58,7 +58,7 @@ export const pricingPlans: PricingPlan[] = [
       { name: 'Family Group', included: false }
     ],
     discount: [
-      { months: 3, percentage: 5, price: 1068 },
+      // { months: 3, percentage: 5, price: 1068 },
       { months: 6, percentage: 12, price: 1980 },
       { months: 'cash', percentage: 26, price: 3746 } // Changed to 'cash' for full course
     ]
