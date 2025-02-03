@@ -73,33 +73,45 @@ export const courses = [
       "To-Do List Application"
     ]
   },
+
   {
-    title: "Data Structures",
+    title: "Data Structures & Complexity Analysis",
     description: "Master fundamental data structures and their implementations. Learn how to choose the right data structure for different scenarios and optimize program performance. Essential knowledge for any serious programmer or software engineer.",
     level: "Intermediate",
-    duration: "10 weeks",
-    rating: 4.7,
-    students: 879,
+    duration: "4-6 Sessions",
+    rating: 4.8,
+    students: 1200,
     image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/DS.png?raw=true",
     topics: [
-      "Arrays & Linked Lists",
-      "Stacks & Queues",
-      "Trees & Graphs",
-      "Hash Tables",
+      "Time Complexity",
+      "Space Complexity",
+      "Big O Notation",
+      "Primitive DS",
+      "Array",
+      "Matrix",
+      "Linked List",
+      "Stack",
+      "Queue",
+      "Tree",
       "Heaps",
-      "Algorithm Analysis"
+      "Graphs",
+      "Sets",
+      "Hash Tables"
     ],
     outcomes: [
-      "Implement common data structures",
-      "Analyze algorithm complexity",
-      "Optimize code performance",
-      "Solve complex programming problems"
+      "Understand and analyze algorithm efficiency using time and space complexity",
+      "Apply Big O notation to evaluate data structure performance",
+      "Differentiate between primitive and non-primitive data structures",
+      "Implement linear data structures such as arrays, linked lists, stacks, and queues",
+      "Design and work with non-linear data structures including trees, heaps, and graphs",
+      "Develop problem-solving skills through practical implementations and projects"
     ],
-    prerequisites: "Basic programming knowledge in any language",
+    prerequisites: "Basic programming knowledge and familiarity with a programming language (preferably Python)",
     projects: [
-      "Custom Collection Library",
-      "Graph Visualization Tool",
-      "Efficient Search Engine"
+      "Implementing and analyzing a linked list",
+      "Designing a stack and queue with complexity analysis",
+      "Creating a binary search tree with traversal algorithms",
+      "Developing a graph data structure with shortest path algorithms"
     ]
   },
   {
