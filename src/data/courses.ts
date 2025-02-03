@@ -40,29 +40,37 @@ export const courses = [
     title: "Python Programming",
     description: "Comprehensive Python course covering everything from basic syntax to advanced features. Learn through hands-on projects and real-world applications. Perfect for beginners and those looking to enhance their programming skills with Python's versatile ecosystem.",
     level: "Beginner",
-    duration: "12 weeks",
+    duration: "10-12 Sessions",
     rating: 4.9,
     students: 1567,
     image: "https://github.com/anwar211944/BackspaceWebsite/blob/main/img/python.png?raw=true",
     topics: [
+      "Introduction To Programming",
       "Python Syntax & Data Types",
-      "Control Flow & Functions",
-      // "Object-Oriented Programming",
-      // "File Handling & APIs",
-      // "Libraries (NumPy, Pandas)",
-      // "Web Scraping"
+      "Variables and Data Structures",
+      "Escape Sequence Characters",
+      "String Manipulation",
+      "Number, List, and Tuple Manipulations",
+      "Set, Dictionary Manipulations, and Type Conversion",
+      "Boolean",
+      "Working with User Input",
+      "Conditions",
+      "Loops",
+      "Exception Handling",
+      "Functions"
     ],
     outcomes: [
       "Write efficient Python code",
-      "Build desktop applications",
-      "Work with databases",
-      "Create data analysis scripts"
+      "Understand Python's core syntax and data types",
+      "Handle user input and process strings and numbers",
+      "Work with complex data structures like lists, tuples, sets, and dictionaries",
+      "Apply control flow, functions, and exception handling in projects",
+      "Solve more than 200 practical problems to build strong problem-solving skills"
     ],
     prerequisites: "Basic computer knowledge",
     projects: [
-      "Task Management System",
-      "Data Analysis Dashboard",
-      "Web Scraping Tool"
+      "Student Grading System",
+      "To-Do List Application"
     ]
   },
   {
