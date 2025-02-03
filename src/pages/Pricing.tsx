@@ -18,43 +18,36 @@ function Pricing() {
       </div>
 
       {/* Billing Cycle Toggle */}
-      <div className="flex justify-center items-center space-x-4 mb-12 mt-8">
-        {['month', 6, 'cash'].map((cycle) => (
-          <button
-            key={cycle}
-            onClick={() => setBillingCycle(cycle)}
-            className={`px-4 py-2 rounded-full transition text-lg ${
-              billingCycle === cycle ? 'bg-primary text-white' : 'bg-gray-200 text-black'
-            }`}
-          >
-            {cycle === 'month'
-              ? 'Monthly'
-              : cycle === 'cash'
-              ? 'Full Course (Cash)'
-              : `${cycle} Months`}
-            {cycle !== 'month' && cycle !== 'cash' && (
-              <span className="text-sm text-primary ml-1">
-                (Save {pricingPlans[0].discount.find((d) => d.months === cycle)?.percentage}%)
-              </span>
-            )}
-          </button>
-        ))}
+      <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 mb-12 mt-8">
+        {['month', 6, 'cash'].map((cycle) => {
+          const discount = pricingPlans[0].discount.find((d) => d.months === cycle);
+          return (
+            <button
+              key={cycle}
+              onClick={() => setBillingCycle(cycle)}
+              className={`px-4 py-2 rounded-full transition text-sm md:text-lg ${
+                billingCycle === cycle ? 'bg-primary text-white' : 'bg-gray-200 text-black'
+              }`}
+            >
+              {cycle === 'month' ? 'Monthly' : cycle === 'cash' ? 'Full Course' : `${cycle} Months`}
+              {discount && (
+                <span className="text-xs md:text-sm text-[#90C440] ml-1">
+                  (Save {discount.percentage}%)
+                </span>
+              )}
+            </button>
+          );
+        })}
       </div>
 
       {/* Pricing Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pricingPlans.map((plan) => {
-            // Find a discount matching the current billing cycle.
             const discount = plan.discount.find((d) => d.months === billingCycle);
-            // If a discount exists (for 3, 6, or cash), use it; otherwise, use the base price.
             const finalPrice = discount ? discount.price : plan.price;
             const pricePer =
-              billingCycle === 'month'
-                ? 'month'
-                : billingCycle === 'cash'
-                ? 'Full Course'
-                : `${billingCycle} months`;
+              billingCycle === 'month' ? 'month' : billingCycle === 'cash' ? 'Full Course' : `${billingCycle} months`;
 
             return (
               <div
@@ -64,9 +57,7 @@ function Pricing() {
                 }`}
               >
                 {plan.popular && (
-                  <div className="absolute top-0 right-0 bg-primary text-white px-4 py-1 text-sm">
-                    Best Value
-                  </div>
+                  <div className="absolute top-0 right-0 bg-primary text-white px-4 py-1 text-sm">Best Value</div>
                 )}
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-black mb-2">{plan.name}</h3>
@@ -77,9 +68,7 @@ function Pricing() {
                   </div>
                   <button
                     className={`w-full py-3 rounded-md transition ${
-                      plan.popular
-                        ? 'bg-primary text-white hover:bg-primary/90'
-                        : 'bg-gray-100 text-black hover:bg-gray-200'
+                      plan.popular ? 'bg-primary text-white hover:bg-primary/90' : 'bg-gray-100 text-black hover:bg-gray-200'
                     }`}
                   >
                     {plan.buttonText}
@@ -94,9 +83,7 @@ function Pricing() {
                         ) : (
                           <X className="h-5 w-5 text-gray-300 mr-2" />
                         )}
-                        <span className={feature.included ? 'text-black' : 'text-black/60'}>
-                          {feature.name}
-                        </span>
+                        <span className={feature.included ? 'text-black' : 'text-black/60'}>{feature.name}</span>
                       </li>
                     ))}
                   </ul>
