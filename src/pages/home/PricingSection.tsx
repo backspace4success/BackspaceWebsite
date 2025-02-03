@@ -15,7 +15,7 @@ function PricingSection() {
 
         {/* Billing Toggle */}
         <div className="flex justify-center items-center space-x-4 mb-12">
-          {['month', 3, 6, 'cash'].map((cycle) => (
+          {['month', 6, 'cash'].map((cycle) => (
             <button
               key={cycle}
               onClick={() => setBillingCycle(cycle)}
